@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主界面</title>
+    <!--
+    <link href="https://fonts.font.im/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="/css/main stage 2.0.css" rel="stylesheet">
+    -->
+    <style>
+      body{
+    background: url("https://wallpapercave.com/wp/wp5103424.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .maintitle{
+    font-size: 50px;
+    font-weight: 600;
+    color:#818DE0;
+    
+  }
+  .logout{
+    font-size: 20px;
+    font-weight: 300;
+    background-image:linear-gradient(#9453D0,#2843AD,#0F1546);
+    margin-left:1600px;
+  }
+  .choice_blanket{
+    background-image:linear-gradient(#9453D0,#2843AD,#0F1546);
+    width:208px;
+    height:950px;
+    margin-left: -8px;
+  }
+  ul{
+    margin-top: 35px;
+    list-style-type: none;
+    overflow: hidden;
+    background-image:linear-gradient(#9453D0,#2843AD,#0F1546);
+    width:10%;
+    height:100%;
+    position:fixed;
+  } 
+  li,li::after{
+    background: linear-gradient(30deg,transparent 10%,#818DE0 10% 95%,  #F394F8 95%);
+    box-shadow: 5px 0 0 rgb(0, 204, 255);
+    height: 13%;
+    width:120%;
+    margin:0 0 20px -38px; 
+  }
+  li a{
+    font-family: 'Do Hyeon',sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color:rgb(255, 251, 251);
+    text-decoration: none;
+    display:block;
+    padding:45px 50px;
+  }
+  li a:hover:not(.active){
+    background-image:linear-gradient(30deg,transparent 10%,#9453D0 10% 95% ,#2843AD 95%);
+}
+.active{
+    background-image: linear-gradient(30deg,transparent 10%,#d226e9 10% 95%,#5027a1 95%);
+}
+  .execute_blank{
+    background-color:none;
+    width:1450px;
+    height:940px;
+    border-top:5px;
+    margin-top: 20px;
+    border-color: aliceblue;
+    position:fixed;
+    margin-left:150px;
+    
+  }
+  
+  li::after{
+      content:'dead';
+      position: relative;
+      top:-80px;
+      left:75px;
+      text-shadow: -5px -2px 0 rgb(0,183,255),5px 2px 0 rgb(0,255,115);
+      visibility: hidden;
+  }
+li:hover::after{
+    animation:san 1s;
+    animation-timing-function: steps(1,end);
+  }
+  @keyframes san{
+       0%{
+        clip-path: inset(20% -5px  60%  0);
+        transform: translate(-6px,5px);
+        visibility: visible;
+       }
+       10%{
+        clip-path: inset(50% -5px  30%  0);
+        transform: translate(6px,-5px);
+       }
+       20%{
+        clip-path: inset(20% -5px  60%  0);
+        transform: translate(5px,0px);
+
+        }
+        30%{
+            clip-path: inset(80% -5px  5%  0);
+        transform: translate(-8px,5px);
+        }
+        40%{
+            clip-path: inset(0 -5px  80%  0);
+        transform: translate(-4px,-3px);
+
+        }
+        50%{
+            clip-path: inset(50% -5px  30%  0);
+        transform: translate(-6px,-5px);
+        }
+        60%{
+            clip-path: inset(80% -5px  5%  0);
+        transform: translate(-7px,5px);
+
+        }
+        70%{
+            clip-path: inset(0 -5px  80%  0);
+        transform: translate(3px,6px);
+        }
+        80%{
+            clip-path: inset(50% -5px  30%  0);
+        transform: translate(5px,5px);
+
+        }
+        90%{
+            clip-path: inset(20% -5px  60%  0);
+        transform: translate(6px,-5px);
+
+        }
+        100%{
+            clip-path: inset(0 -5px  80%  0);
+        transform: translate(1px,5px);
+
+        }
+   }
+
+  .execute_blank .banner-container{
+    width:1477px;
+    height:330px;
+    margin:1rem auto;
+    overflow: hidden;
+    position: fixed;
+  margin-left: 60px;
+
+
+}
+
+.execute_blank .banner-container .banner-img-container {
+    width:7385px;
+    height:330px;
+    overflow: hidden;
+    position: absolute;
+
+    display: flex;
+    animation: run 20s ease infinite;
+}
+
+.execute_blank .banner-container .banner-img-container img{
+    width:1477px;
+    height:100%;
+}
+.execute_blank  .first_layor{
+  width:100%;
+  height:200px;
+    margin:400px 0 0 300px;
+}
+.execute_blank .btn-secondary{
+border-radius: 200px;
+margin-right: 300px;
+background-color: rgb(0, 255, 153);
+cursor:pointer;
+border:1px;
+border-color: whitesmoke;
+transition-duration: 0.4s;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.execute_blank .btn-secondary:hover{
+background-image:linear-gradient(rgb(191, 0, 255),rgb(0, 21, 255));
+transform: translateY(-5px);
+}
+.execute_blank .btn-secondary img{
+    width:auto;
+    height:auto;
+    margin-left: -4px;
+}
+
+@keyframes run {
+0%{
+    /* margin-left: 0; */
+    transform: translateX(0);
+}
+25%{
+    /* margin-left: -1477px;; */
+    transform: translateX(-1477px);
+}
+50%{
+    /* margin-left: -px; */
+    transform: translateX(-2954px);
+}
+75%{
+    /* margin-left: -4650px; */
+    transform: translateX(-4431px);
+}
+100%{
+    /* margin-left: -6200px; */
+    transform: translateX(-5908px);
+}
+}
+p{
+  font-size: 33px;
+  font-weight: 600;
+  text-align: center;
+}
+.execute_blank .btn-secondary .btn_name{
+ margin-left: -20px;
+ color:white;
+ white-space: nowrap;
+}
+.execute_blank .second-layor{
+  width:100%;
+  margin:0 0 0 490px;
+}
+.execute_blank .btn-third{
+border-radius: 200px;
+margin-right: 360px;
+bottom: -20px;
+background-color: rgb(0, 255, 153);
+cursor:pointer;
+border:1px;
+border-color: whitesmoke;
+transition-duration: 0.4s;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.execute_blank .btn-third:hover{
+background-image:linear-gradient(rgb(191, 0, 255),rgb(0, 21, 255));
+transform: translateY(-5px);
+}
+.execute_blank .btn-third img{
+    width:auto;
+    height:auto;
+    margin-left: -4px;
+}
+.execute_blank .btn-third .btn_name{
+ margin-left: -20px;
+ color:white;
+ white-space: nowrap;
+}
+    </style>
+</head>
+<body>
+    <div class="maintitle" style="float:left">教室预约平台
+    <div class="logout" style="position: absolute;"><a href="">退出</a></div>
+       <div class="chocie_blank">
+             <ul>
+                <li><a href="http://127.0.0.1:5500/HTML/%E4%B8%BB%E7%95%8C%E9%9D%A22.0.html#sy">首页</a></li>
+                <li><a href="http://127.0.0.1:5500/HTML/user%20center.html">个人中心</a></li>
+                <li><a href="http://127.0.0.1:5500/HTML/%E4%B8%BB%E7%95%8C%E9%9D%A22.0.html#kjbj">空间布局</a></li>
+                <li><a href="http://127.0.0.1:5500/HTML/%E4%BE%BF%E5%88%A9%E8%AE%BE%E6%96%BD.html#%E6%B6%88%E9%98%B2%E8%AE%BE%E6%96%BD">便利设施</a></li>
+              </ul>
+        <div class="execute_blank">
+           <div style="display:none;">
+              <!-- 创建外部展示容器 -->
+              <div class="banner-container" style="position:absolute; z-index:999;top:0;">
+                <!-- 创建图片存储容器 -->
+                  <div class="banner-img-container">
+                      <img src="https://wallpapercave.com/wp/wp12420093.jpg" alt="">
+                      <img src="https://wallpapercave.com/wp/wp12420099.jpg" alt="">
+                      <img src="https://cdn.sputniknews.cn/images/07e4/08/18/1032017557.jpg" alt="">
+                      <img src="https://wallpapercave.com/wp/wp13595299.jpg" alt="">
+                      <img src="https://wallpapercave.com/wp/wp12420093.jpg" alt="">
+                        </div>
+                        </div> 
+               <div class="first_layor">
+                <a href="http://127.0.0.1:5500/HTML/%E6%95%99%E5%AE%A4%E6%9F%A5%E8%AF%A2.html">
+                  <button class="btn-secondary">
+                     <img src="https://www.bcia.com.cn/userfiles/_thumbs/images/cms/category/logo/home_logo/homelogo_01_hangbanchaxun.png" alt="">
+                     <div class="btn_name" style="position: absolute;"><p>教室查询及预约</p></div></button></a>
+                <a href="http://127.0.0.1:5500/HTML/%E9%A2%84%E7%BA%A6%E9%A1%BB%E7%9F%A5.html">
+                  <button class="btn-secondary" onclick="">
+                   <img src="https://www.bcia.com.cn/userfiles/_thumbs/images/cms/category/logo/home_logo/homelogo_05_lvkexuzhi.png" alt="">
+                   <div class="btn_name" style="position: absolute;"><p>预约须知</p></div>
+                  </button></a>
+                <a href="http://127.0.0.1:5500/HTML/WIFI.html">
+                  <button class="btn-secondary" onclick="">
+                    <img src="https://www.bcia.com.cn/userfiles/_thumbs/images/cms/category/logo/home_logo/homelogo_08_wifi.png" alt="">
+                    <div class="btn_name" style="position: absolute;"><p>WIFI网络</p></div>
+                   </button>
+                </a>
+               </div>
+              
+               <div class="second-layor">
+                <a href="http://127.0.0.1:5500/HTML/%E7%94%A8%E6%88%B7%E5%92%A8%E8%AF%A2.html">
+                   <button class="btn-third" onclick="">
+                     <img src="https://www.bcia.com.cn/userfiles/_thumbs/images/cms/category/logo/home_logo/homelogo_10_lvxingzixun.png" alt="">
+                     <div class="btn_name" style="position: absolute;"><p>用户咨询</p></div>
+                   </button></a>
+                  <a href="http://127.0.0.1:5500/HTML/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html">
+                   <button class="btn-third" onclick="">
+                    <img src="https://www.bcia.com.cn/userfiles/_thumbs/images/cms/category/logo/home_logo/homelogo_16_cahngyongdianhua.png" alt="">
+                    <div class="btn_name" style="position: absolute;"><p>联系我们</p></div>
+                   </button></a>
+               </div>
+           </div>
+            <div  style="display:none;">
+              hellow world
+            </div>
+            <div  style="display: none;">
+            </div>
+            <div  style="display: none;">
+            </div>
+        </div> 
+        
+       </div>      
+    </div>
+    
+    <script>
+      
+      var lis=document.querySelector('ul').querySelectorAll('li');  /*导航栏队列*/
+      var divs=document.querySelector('.execute_blank').querySelectorAll('div'); /*内容栏队列*/
+      lis[0].className='active';
+      divs[0].style.display='block';
+      for(var i=0;i<lis.length;i++)
+      {
+         lis[i].setAttribute('index',i); /*i作为指针*/
+         lis[i].onclick=function(){   /*click时起作用*/
+             for(var i=0;i<lis.length;i++){
+                 lis[i].className='';    /*所有栏初始状态置空*/
+             }
+             this.className='active'  /*this用于将指定栏设置为active状态*/
+             var index=this.getAttribute('index');  /*通过this中活动栏得到该栏指引*/
+             for(var i=0;i<divs.length;i++){    
+                 divs[i].style.display='none';
+             }
+             divs[index].style.display='block';
+         }
+      }
+ </script>
+
+</body>
+</html>

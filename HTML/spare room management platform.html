@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spare room</title>
+    <style type="text/css">
+     body{
+        background: url("https://wallpapercave.com/wp/wp5380284.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .frame{
+            width: 1500px;
+            height: 850px;
+            background-color: rgb(9, 9, 9,0.3);
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            margin-left: -68px;
+            margin-top: -62px;
+            border-radius: 25px;
+            text-align: center;
+            padding: 5px 40px;
+            box-sizing: border-box;
+     }
+    
+    .new{
+         text-align: center;
+         color:whitesmoke;
+         font-size: 40px;
+         font-weight: 500;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     table{
+          width: 100%;
+          border-collapse: collapse;
+     }
+
+     th,td{  /*th 标题单元格  td单元格*/
+        border: 1px solid #999;
+        text-align: center;
+        padding: 30px 0;
+     }
+
+     table thead tr{  /*tr 有子元素  thead 表头第一行*/
+        background-color: #008c80;
+        color: #fff;
+     }
+
+     table tbody tr:nth-child(odd){  /*odd第奇数列*/
+        background-color: #efeaea;
+     }
+
+     table tbody tr td:first-child{  /*实现表格第一列全部单元背景色更改*/
+        color: #f40;
+     }
+
+     table tfoot tr td{ /*实现当鼠标悬停与表格某个地方，整行变色*/
+        text-align: right;
+        padding-right: 20px;
+     }
+    
+    button {
+    background-color: rgba(11, 10, 10, 0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 24px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body >
+    <form action="" class="frame">
+    <table>
+      <new>
+        spare room management platform 
+      </new>
+      <thead>
+           <tr>
+                <th>教室号</th>
+                <th>教室位置</th>
+                <th>教室空位数</th>
+                <th>教室使用人数</th>
+                <th>教室是否空闲</th>
+           </tr>
+      </thead>
+      <tbody>
+        <tr>    <!--此处设立10行为一页-->
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+      </tbody>
+       <tfoot>
+           <tr>
+               <td colspan="5"></td>
+           </tr>
+       </tfoot>
+    </table>
+    <button onclick="">◀</button><button onclick="">1/10</button> <button>▶</button>
+    </form>
+</body>
+</html>

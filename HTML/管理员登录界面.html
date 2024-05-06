@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="/css/login platform.css">
+</head>
+<body background="https://wallpapercave.com/wp/wp5380284.png"
+    style="background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;">  
+        <div class="login-panel">
+        <p> LOGIN </p> <br>
+        <input type="text" id="username" placeholder="USERNAME "> 
+        <input type="password" id="password" placeholder="PASSWORD">
+        <button class="button button1" onclick="login(this)">LOGIN</button>
+        </div>
+    <script>
+    function login(thisform){
+        var btn=document.getElementById("button");
+        var user=document.getElementById("username").value;
+        var pw=document.getElementById("password").value;
+        
+        if(user=="ravemelodic"&& pw=="123")
+        {
+             window.location.href="http://127.0.0.1:5500/HTML/platform%20choice.html";
+        }      
+        else{
+            history.go(-1);
+            alert("用户名或密码错误");
+        }}
+    </script>
+</body> 

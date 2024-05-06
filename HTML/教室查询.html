@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教室查询及预约</title>
+    <style type="text/css">
+        body{
+    background: url("https://wallpapercave.com/wp/wp5103424.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+         }
+         .maintitle{
+            font-size: 60px;
+            font-weight: 600;
+            color:#475ffa;
+            text-align: center;
+            text-shadow: 1px 1px 2px red, 0 0 1em rgb(162, 0, 255), 0 0 0.2em blue;
+            position:relative;
+         }
+         .BG{
+            background-image:linear-gradient(120deg,transparent 5%,#6AAFF2 ,#4A42A1,#21174B,transparent);
+            width:1500px;
+            margin: 50px 0 100px 75px;
+            position:absolute;
+            height:1000px;
+            transform: translateY(-1.5px);
+         }
+         
+        
+        input{
+            background-image: linear-gradient(#67d8f7 ,#3d3fd0 ,#8343c2 );
+            width:300px;
+            height: 50px;
+            border: 1px;
+            font-size: 22px;
+            box-shadow: 0px 8px 16px 0px rgba(252, 15, 212, 0.785);
+            margin:100px 0 0 250px;
+            border-radius: 5px;
+            margin-right: 140px;
+            color:#67d8f7;
+         }
+         /*改变input输入行字体颜色*/
+         input[type=text]::placeholder{
+            color:#67d8f7;
+         }
+        /*下拉列表*/
+         datalist{
+            background-image: linear-gradient(#67d8f7 ,#3d3fd0 ,#8343c2 );
+            box-shadow: 0px 8px 16px 0px rgba(252, 15, 212, 0.785);
+         }
+    p{
+        color:#67d8f7;
+        width:auto;
+        position: absolute;
+        font-size:25px;
+        margin:108px 0 0 135px;
+        text-shadow:1px 1px 2px red, 0 0 0.2em rgb(162, 0, 255), 0 0 0.2em blue;
+     
+    }  
+    .class-title{
+        color:#fdfcfd;
+        position: absolute;
+        font-size: 25px;
+        margin:-40px 0 0px 855px;
+        width:auto;
+        text-shadow: 1px 1px 2px rgb(247, 78, 5), 0 0 0.2em rgb(189, 57, 1), 0 0 0.2em rgb(255, 0, 0);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="maintitle">教室查询及预约</div>
+    <div class="BG">
+        <p>教学楼号:</p><input type="text" list="typelist" placeholder="请选择">
+            
+            <datalist id="typelist">
+                <option>一教</option>
+                <option>二教</option>
+                <option>三教</option>
+            </datalist>
+        <div class="class-title">教室号:</div>
+        <input type="text" placeholder="CLASS NUM">
+    </div>
+    
+</body>
+</html>
