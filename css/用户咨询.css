@@ -1,0 +1,49 @@
+/*可折叠问题窗口*/
+summary{
+    margin:50px 0 0 100px;
+     height:75px;
+     width:500px;
+     background-image: linear-gradient(#67d8f7 ,#3d3fd0 ,#8343c2 );
+    box-shadow: 0px 8px 16px 0px rgba(252, 15, 212, 0.785);
+    position: relative;
+    cursor:pointer;
+    border-radius: 5px;
+}
+/*CSS3 打开折叠动画*/
+/*<details> 标签用于描述文档或文档某个部分的细节*/
+details[open] summary~*   {
+       animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: 0px
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: -5px;
+    }
+}
+/*折叠*/
+details>summary::-webkit-details-marker {
+    display: none;
+}
+/*问题栏字体*/
+.min{
+    font-size: 25px;
+    font-weight: 500;
+    color:rgb(242, 238, 7);
+    font-style: italic;
+    text-align: left;
+    margin:10px 0 0 100px;
+/*回答栏字体*/    
+}
+.que_title{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    background: linear-gradient(#F6B080,#F58B60,#E1664C);
+    -webkit-background-clip: text;  /*使背景限制于文本中*/
+    -webkit-text-fill-color: transparent;
+}

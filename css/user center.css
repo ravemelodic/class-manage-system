@@ -1,0 +1,151 @@
+body{
+    background:url("https://wallpapercave.com/wp/wp5380284.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.personal_panel{
+   width: 1625px;
+   height: 100px;
+   background-image:linear-gradient(rgb(247, 190, 5),orange, rgb(247,190,5));
+   position:absolute;
+   top:10%;
+   left:6%;
+   margin-top:-68px;
+   margin-left:-62px;
+   border-radius:10px;
+   text-align: center;
+   padding:5px 40px;
+   box-sizing: border-box;
+   border-color: orange;
+   border-style: groove;
+   
+  }
+P{
+    font-size:24px;
+    font-weight: 500;
+    margin-top:10px;
+}
+
+.details_panel
+{
+  width: 1625px;
+   height: 780px;
+   background-color: whitesmoke;
+   position:absolute;
+   top:10%;
+   left:6%;
+   margin-top:32px;
+   margin-left:-62px;
+   border-radius:10px;
+   text-align: center;
+   padding:5px 40px;
+   box-sizing: border-box;
+   border-color: orange;
+   border-style: groove;
+}
+.blanket{
+  width: 1300px;
+   height: 778px;
+   background-color: whitesmoke;
+   position:absolute;
+   top:0;
+   left:0%;
+   margin-top:-1px;
+   margin-left:322px;
+   text-align: center;
+   padding:5px 40px;
+   box-sizing: border-box;
+   border-color: orange;
+   border-style: groove;
+   border-radius: 10px;
+}
+.margin{
+  width: 325px;
+   height: 100px;
+   background-color: orange;
+   position:absolute;
+   top:0;
+   left:0%;
+   margin-top:-1px;
+   margin-left:0px;
+   text-align: center;
+   padding:5px 40px;
+   box-sizing: border-box;
+   border-color: orange;
+   border-style: groove;
+   border-radius: 10px;
+}
+.details_blanket
+{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+} 
+p{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.college_info{
+  width: 1200px;
+   height: 756px;
+   background-color: whitesmoke;
+   position:absolute;
+   top:0;
+   left:0%;
+   margin-top:20px;
+   margin-left:50px;
+   text-align: center;
+   padding:5px 40px;
+   box-sizing: border-box;
+   border-color: orange;
+   border-style: groove;
+   border-radius: 10px;
+}
+input{
+           background-color: whitesmoke;
+           width:80%;
+           height: 40px;
+           margin-bottom: 10px;
+           border-color: orange;
+           border-radius: 5px;
+           outline: none;
+           font-size: 22px;
+           margin:15px;
+           margin-top: 30px;
+
+}
+.certain_btn{
+  background-image: linear-gradient(rgb(23, 122, 44),rgb(26, 205, 26),rgb(23, 122, 44));
+  border:0;
+  color: white;
+  padding: 24px 24px;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius:50px;
+  margin: 30px;
+  margin-left: 50px;
+}
+.certain_btn:hover{
+  background-image: linear-gradient(green,greenyellow,green);
+}
+.cancel_btn{
+  background-image: linear-gradient(gray,rgb(199, 199, 199),gray);
+  border:0;
+  color: white;
+  padding: 24px 24px;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius:50px;
+  margin: 30px;
+  margin-left: -20px;
+}
+.cancel_btn:hover{
+    background-image: linear-gradient(rgb(184, 183, 183),rgb(235, 234, 234),rgb(184, 183, 183));
+}

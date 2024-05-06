@@ -1,0 +1,40 @@
+.panel_1{
+    width: 1650px;
+    height: 850px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 25%;
+    left: 13.2%;
+    margin-left: -200px;
+    margin-top: -200px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px 40px;
+    box-sizing: border-box;
+}
+
+caption{
+font-size: 55px;
+ font-weight: 600;
+}
+
+button{
+background-color: rgb(170, 169, 169,0.8);
+border: none;
+color: white;
+padding: 10px 10px;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+font-size: 32 px;
+margin: 42px 2px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 25px;
+}
+img{
+width:750px;
+height:730px;
+border-radius: 25px;
+}

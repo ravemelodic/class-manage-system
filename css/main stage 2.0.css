@@ -1,0 +1,233 @@
+body{
+    background: url("https://wallpapercave.com/wp/wp5103424.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .maintitle{
+    font-size: 50px;
+    font-weight: 600;
+    color:#818DE0;
+    
+  }
+  .logout{
+    font-size: 20px;
+    font-weight: 300;
+    background-image:linear-gradient(#9453D0,#2843AD,#0F1546);
+    margin-left:1600px;
+  }
+  .chocie_blank{
+    background-image:linear-gradient(#9453D0,#2843AD,#0F1546);
+    width:208px;
+    height:950px;
+    margin-top: 35px;
+    margin-left: -8px;
+    
+  } 
+  .execute_blank{
+    background-color:none;
+    width:1450px;
+    height:940px;
+    border-top:5px;
+    margin-top: 30px;
+    border-color: aliceblue;
+
+    margin-left:150px;
+    
+  }
+  div.button,div.button::after{
+    font-family: 'Do Hyeon',sans-serif;
+    height:140px;
+    width:200px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 80px;
+    margin-left: -150px;
+    border-bottom: 5px;
+    color: rgb(255, 251, 251);
+    background: linear-gradient(30deg,transparent 10%,#818DE0 10% 95%,  #F394F8 95%);
+    box-shadow: 5px 0 0 rgb(0, 204, 255);
+    cursor: pointer;
+    position: relative;
+  }
+  div.button::after{
+      content:'dead';
+      position: absolute;
+      top:0;
+      left:150px;
+      text-shadow: -5px -2px 0 rgb(0,183,255),5px 2px 0 rgb(0,255,115);
+      visibility: hidden;
+  }
+  div.button:hover::after{
+    animation:san 1s;
+    animation-timing-function: steps(1,end);
+  }
+  @keyframes san{
+       0%{
+        clip-path: inset(20% -5px  60%  0);
+        transform: translate(-6px,5px);
+        visibility: visible;
+       }
+       10%{
+        clip-path: inset(50% -5px  30%  0);
+        transform: translate(6px,-5px);
+       }
+       20%{
+        clip-path: inset(20% -5px  60%  0);
+        transform: translate(5px,0px);
+
+        }
+        30%{
+            clip-path: inset(80% -5px  5%  0);
+        transform: translate(-8px,5px);
+        }
+        40%{
+            clip-path: inset(0 -5px  80%  0);
+        transform: translate(-4px,-3px);
+
+        }
+        50%{
+            clip-path: inset(50% -5px  30%  0);
+        transform: translate(-6px,-5px);
+        }
+        60%{
+            clip-path: inset(80% -5px  5%  0);
+        transform: translate(-7px,5px);
+
+        }
+        70%{
+            clip-path: inset(0 -5px  80%  0);
+        transform: translate(3px,6px);
+        }
+        80%{
+            clip-path: inset(50% -5px  30%  0);
+        transform: translate(5px,5px);
+
+        }
+        90%{
+            clip-path: inset(20% -5px  60%  0);
+        transform: translate(6px,-5px);
+
+        }
+        100%{
+            clip-path: inset(0 -5px  80%  0);
+        transform: translate(1px,5px);
+
+        }
+   }
+
+  .execute_blank .banner-container{
+    width:1477px;
+    height:330px;
+    margin:1rem auto;
+    overflow: hidden;
+    position: relative;
+  margin-top: 103px;
+  margin-left: 60px;
+
+
+}
+
+.execute_blank .banner-container .banner-img-container {
+    width:7385px;
+    height:330px;
+    overflow: hidden;
+    position: absolute;
+
+    display: flex;
+    animation: run 20s ease infinite;
+}
+
+.execute_blank .banner-container .banner-img-container img{
+    width:1477px;
+    height:100%;
+}
+.execute_blank .button-wrapper {
+display: flex;
+}
+.execute_blank .btn-secondary{
+width:100px;
+height: 100px;
+border-radius: 200px;
+position:relative;
+top: -250px;
+left: 300px;
+margin-right: 300px;
+background-color: rgb(0, 255, 153);
+cursor:pointer;
+border:1px;
+border-color: whitesmoke;
+transition-duration: 0.4s;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.execute_blank .btn-secondary:hover{
+background-image:linear-gradient(rgb(191, 0, 255),rgb(0, 21, 255));
+transform: translateY(-5px);
+}
+.execute_blank .btn-secondary img{
+    width:auto;
+    height:auto;
+    margin-left: -4px;
+}
+
+@keyframes run {
+0%{
+    /* margin-left: 0; */
+    transform: translateX(0);
+}
+25%{
+    /* margin-left: -1477px;; */
+    transform: translateX(-1477px);
+}
+50%{
+    /* margin-left: -px; */
+    transform: translateX(-2954px);
+}
+75%{
+    /* margin-left: -4650px; */
+    transform: translateX(-4431px);
+}
+100%{
+    /* margin-left: -6200px; */
+    transform: translateX(-5908px);
+}
+}
+p{
+  font-size: 33px;
+  font-weight: 600;
+  text-align: center;
+}
+.execute_blank .btn-secondary .btn_name{
+ margin-left: -20px;
+ color:white;
+ white-space: nowrap;
+}
+.execute_blank .btn-third{
+width:100px;
+height: 100px;
+border-radius: 200px;
+position:relative;
+top: -30px;
+left:-705px;
+margin-right: 300px;
+background-color: rgb(0, 255, 153);
+cursor:pointer;
+border:1px;
+border-color: whitesmoke;
+transition-duration: 0.4s;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.execute_blank .btn-third:hover{
+background-image:linear-gradient(rgb(191, 0, 255),rgb(0, 21, 255));
+transform: translateY(-5px);
+}
+.execute_blank .btn-third img{
+    width:auto;
+    height:auto;
+    margin-left: -4px;
+}
+.execute_blank .btn-third .btn_name{
+ margin-left: -20px;
+ color:white;
+ white-space: nowrap;
+}

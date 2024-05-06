@@ -1,0 +1,49 @@
+.banner-container{
+	width:1550px;
+	height:600px;
+	margin:1rem auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner-container .banner-img-container {
+	width:6200px;
+	height:600px;
+	overflow: hidden;
+	position: absolute;
+
+	display: flex;
+	animation: run 10s ease infinite;
+}
+
+.banner-container .banner-img-container img{
+	width:1550px;
+	height:100%;
+}
+
+@keyframes run {
+	0%,10%{
+		/* margin-left: 0; */
+		transform: translateX(0);
+	}
+	20%,30%{
+		/* margin-left: -1550px;; */
+		transform: translateX(-1550px);
+	}
+	40%,50%{
+		/* margin-left: -3100px; */
+		transform: translateX(-3100px);
+	}
+	60%,70%{
+		/* margin-left: -4650px; */
+		transform: translateX(-4650px);
+	}
+	80%,90%{
+		/* margin-left: -6200px; */
+		transform: translateX(-6200px);
+	}
+	100%{
+		/* margin-left: 0; */
+		transform: translateX(0);
+	}
+}
