@@ -56,6 +56,7 @@ filetree
 
 1.visual studio code version-1.89
 2.Microsoft Windows 11 
+3.Vue 3.4.21
 
 ## 网址
 
