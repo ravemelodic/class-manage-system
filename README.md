@@ -14,15 +14,17 @@
 ## 目录
 - [开发目的](#开发目的)
 - [开发前的配置要求](#开发前的配置要求)
-- [文件目录说明](#目录)
+- [目录](#目录)
+- [文件目录说明](#文件目录说明)
 - [开发架构](#开发架构)
 - [使用到的框架](#使用到的框架)
 - [贡献者](#贡献者)
 - [版本控制](#版本控制)
 - [作者](#作者)
-## category
+## 文件目录说明
 ```
-filetree 
+filetree
+front-end 
 ├── /CSS/
 │  ├── autoMatic.css
 │  ├── login platform.css
@@ -33,21 +35,35 @@ filetree
 │  ├── 教室学生端背景框架.css
 │  ├── 用户咨询.css
 │  └── 管理平台.css
-│── /HTML/
-│  ├── platform choice.html
-│  ├── user center.html
-│  ├── WIFI.html
-│  ├── 主界面2.0.html
-│  ├── 便利设施.html
-│  ├── 教室查询.html
-│  ├── 用户咨询.html
-│  ├── 空间布局.html
-│  ├── 管理员登录界面.html
-│  ├── 管理平台.html
-│  ├── 联系我们.html
-│  └── 预约须知.html
 │── /JS/
 │  └── index.js
+│── /vue project/
+│  └── /class-frame
+│  │  └── /src/
+│  │  │  ├── /components/
+│  │  │  │  ├── /login/
+│  │  │  │  │  ├── login.vue
+│  │  │  │  │  └── register.vue
+│  │  │  │  ├── /platform/
+│  │  │  │  │  └── platform.choice.vue
+│  │  │  │  ├── /managerstage/
+│  │  │  │  │  ├── manager_judge.vue
+│  │  │  │  │  └── userinfo_managestore.vue
+│  │  │  │  ├── /mainstage/
+│  │  │  │  │  ├── /guideline/
+│  │  │  │  │  │  ├── mainstage.vue
+│  │  │  │  │  │  ├── user_center.vue
+│  │  │  │  │  │  ├── space.vue
+│  │  │  │  │  │  └── facility_infrastructure.vue
+│  │  │  │  │  ├── /btn_line/
+│  │  │  │  │  │  ├── contact.vue
+│  │  │  │  │  │  ├── reserve_rules.vue
+│  │  │  │  │  │  ├── search.vue
+│  │  │  │  │  │  ├── WIFI.vue
+│  │  │  │  │  │  └── user_enquire.vue
+│  │  │  ├── /router/
+│  │  │  ├── App.vue
+│  │  │  └── main.js
 ├── LICENSE.txt
 ├── README.md
 ```
@@ -57,19 +73,26 @@ filetree
 1.visual studio code version-1.89
 2.Microsoft Windows 11 
 3.Vue 3.4.21
+4.Node.js v20.13.1
 
 ## 网址
-
+http://localhost:xxxx/
 ## 开发架构
 详情请见architecture: https://github.com/ravemelodic/class-manage-system/blob/main/architecture.md
 ## 使用到的框架
-基于Vue架构实现前端用户界面和管理员界面与Mysql数据库及后端服务的交互，项目后端基于Django实现Mysql数据库中的用户数据及空闲教室数据获取及更新请求，实现实时更新数据
+1.vue3 
+基于vue框架实现用户端注册登录、教室信息资源查询及预约等多种功能的使用。
+2.vue router 4
+本项目使用基于vue框架下的路由管理工具vue router 4以实现路由搭建及数据共享，使项目中各组件能够相互关联且用户在注册后的用户数据能够向管理员进行共享。
+3.vue axios
+本项目使用基于vue框架下的前后端交互工具vue axios，实现前端用户数据输送至后端管理、后端教室信息的抓取及更新和预约信息管理及预约信息审核。
 ## 贡献者
 
 ## 版本控制
 
 ## 作者
-
+ravemelodic:
+https://github.com/ravemelodic
 
 
 
